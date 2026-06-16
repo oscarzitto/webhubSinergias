@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/home.css";
 
 export default function Home() {
@@ -16,19 +17,23 @@ export default function Home() {
 
       <section className="quick-access">
 
-        <div className="card">
-          <h2>🌎 GeoDashboard</h2>
-          <p>
-            Visualización territorial de instituciones e iniciativas.
-          </p>
-        </div>
+        <Link to="/geodashboard" className="card-link">
+          <div className="card">
+            <h2>🌎 GeoDashboard</h2>
+            <p>
+              Visualización territorial de instituciones e iniciativas.
+            </p>
+          </div>
+        </Link>
 
-        <div className="card">
-          <h2>📊 ODS Dashboard</h2>
-          <p>
-            Seguimiento de avances y procesos de certificación.
-          </p>
-        </div>
+        <Link to="/ods-dashboard" className="card-link">
+          <div className="card">
+            <h2>📊 ODS Dashboard</h2>
+            <p>
+              Seguimiento de avances y procesos de certificación.
+            </p>
+          </div>
+        </Link>
 
       </section>
 

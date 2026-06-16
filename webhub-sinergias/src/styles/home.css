@@ -32,3 +32,9 @@
   padding: 1rem;
   border-radius: 10px;
 }
+
+.card-link {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+}
