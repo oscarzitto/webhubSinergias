@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "../layouts/MainLayout";
 
 import Home from "../pages/Home";
 import DestinosSostenibles from "../pages/DestinosSostenibles";
@@ -17,14 +18,75 @@ export default function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/destinos-sostenibles" element={<DestinosSostenibles />} />
-        <Route path="/ecosistemas-formativos" element={<EcosistemasFormativos />} />
-        <Route path="/participantes" element={<Participantes />} />
-        <Route path="/mapa-instituciones" element={<MapaInstituciones />} />
-        <Route path="/avances" element={<Avances />} />
-        <Route path="/recursos" element={<Recursos />} />
-        <Route path="/contacto" element={<Contacto />} />
+
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <Home />
+            </MainLayout>
+          }
+        />
+
+        <Route
+          path="/destinos-sostenibles"
+          element={
+            <MainLayout>
+              <DestinosSostenibles />
+            </MainLayout>
+          }
+        />
+
+
+        <Route
+          path="/ecosistemas-formativos"
+          element={
+            <MainLayout>
+              <EcosistemasFormativos />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/participantes"
+          element={
+            <MainLayout>
+              <Participantes />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/mapa-instituciones"
+          element={
+            <MainLayout>
+              <MapaInstituciones />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/avances"
+          element={
+            <MainLayout>
+              <Avances />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/recursos"
+          element={
+            <MainLayout>
+              <Recursos />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/contacto"
+          element={
+            <MainLayout>
+              <Contacto />
+            </MainLayout>
+          }
+        />
+        
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<DashboardPrivado />} />
         <Route path="/geodashboard" element={<GeoDashboardDemo />} />
