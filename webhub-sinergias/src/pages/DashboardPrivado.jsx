@@ -5,7 +5,7 @@ import "../styles/dashboard.css";
 export default function DashboardPrivado() {
 
   return (
-    <div className="dashboard-container">
+    <div className="page-container">
 
       <h1>Panel Institucional</h1>
 

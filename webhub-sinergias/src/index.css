@@ -31,16 +31,22 @@
 body {
   font-family: 'Inter', sans-serif;
 
-  background-color: var(--color-background);
-
   color: var(--color-text);
 
   line-height: 1.6;
 
   min-height: 100vh;
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background:
+    linear-gradient(rgba(8, 35, 50, 0.70),
+      rgba(18, 70, 40, 0.70)),
+    url("https://sinergias.cl/wp-content/uploads/2022/10/slide-show-principal.webp");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-attachment: fixed;
 }
 
 #root {
@@ -61,14 +67,17 @@ h6 {
 
 h1 {
   font-size: 2.8rem;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 /* TEXTO */
@@ -202,4 +211,74 @@ img {
   background: #fbc02d;
 
   transform: translateY(-2px);
+}
+
+/* CONTENEDOR ESTÁNDAR PARA PÁGINAS */
+
+.page-container {
+  max-width: 1200px;
+
+  margin: 40px auto;
+
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* TITULOS DE PÁGINA */
+
+.page-container h1 {
+  color: var(--color-primary);
+
+  margin-bottom: 20px;
+}
+
+.page-container h2 {
+  color: var(--color-secondary);
+
+  margin-bottom: 15px;
+}
+
+.page-container p {
+  color: #455a64;
+}
+
+.card,
+.initiative-card,
+.flow-card,
+.stat,
+.recurso-card,
+.participante-card,
+.dashboard-card,
+.geo-card {
+
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 24px;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.card:hover,
+.initiative-card:hover,
+.recurso-card:hover,
+.participante-card:hover,
+.geo-card:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.12);
 }

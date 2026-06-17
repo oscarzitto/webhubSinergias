@@ -1,44 +1,56 @@
 .home {
-  max-width: 1300px;
+  max-width: 1200px;
+
   margin: 0 auto;
-  padding: 2rem;
+
+  padding: 40px 20px;
 }
 
 /* HERO */
 
 .hero {
   text-align: center;
-  padding: 5rem 2rem;
+
+  padding: 80px 30px;
+
+  margin-bottom: 50px;
+
   border-radius: 20px;
 
-  background: linear-gradient(
-    135deg,
-    #e8f5e9,
-    #e3f2fd
-  );
+  background:
+    rgba(255, 255, 255, 0.12);
 
-  margin-bottom: 3rem;
+  backdrop-filter: blur(8px);
+
+  color: white;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  color: #1565c0;
-  margin-bottom: 1rem;
+  color: white;
+
+  margin-bottom: 20px;
+
+  font-size: 3.5rem;
 }
 
 .hero p {
-  max-width: 850px;
-  margin: 0.8rem auto;
-  line-height: 1.7;
-  font-size: 1.1rem;
-  color: #444;
+  color: rgba(255, 255, 255, 0.92);
+
+  max-width: 800px;
+
+  margin: 0 auto 15px;
 }
+
+/* ACCESOS */
 
 /* ACCESOS */
 
 .quick-access {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
   gap: 25px;
 
   margin-bottom: 4rem;
@@ -46,32 +58,64 @@
 
 .card-link {
   text-decoration: none;
-  color: inherit;
+
+  display: block;
 }
 
 .card {
-  height: 100%;
 
-  background: white;
-  border-radius: 18px;
+  background: linear-gradient(135deg,
+      rgba(21, 101, 192, 0.95),
+      rgba(66, 165, 245, 0.95));
+
+  color: white;
+
   padding: 2rem;
 
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border-radius: 18px;
 
-  transition: 0.3s;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.15);
+
+  position: relative;
+
+  overflow: hidden;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+
+  transform:
+    translateY(-6px) scale(1.02);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.20);
+}
+
+.card::after {
+
+  content: "Abrir módulo →";
+
+  display: block;
+
+  margin-top: 1rem;
+
+  font-weight: 600;
+
+  opacity: 0.9;
 }
 
 .card h2 {
-  color: #1565c0;
-  margin-bottom: 1rem;
+  color: white;
+
+  margin-bottom: 0.8rem;
 }
 
 .card p {
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* SECCIONES */
@@ -84,7 +128,7 @@
 
   border-radius: 18px;
 
-  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 
   margin-bottom: 3rem;
 }
@@ -119,7 +163,7 @@
 
   border-radius: 18px;
 
-  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 }
 
 .initiative-card h2 {
@@ -184,7 +228,7 @@
 
   border-radius: 18px;
 
-  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
 }
 
 .stat h3 {

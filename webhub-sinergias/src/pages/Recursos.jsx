@@ -3,7 +3,7 @@ import "../styles/recursos.css";
 
 export default function Recursos() {
   return (
-    <div className="recursos-container">
+    <div className="page-container">
 
       <h1>Recursos Públicos</h1>
 

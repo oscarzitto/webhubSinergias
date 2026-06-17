@@ -3,7 +3,7 @@ import "../styles/avances.css";
 
 export default function Avances() {
   return (
-    <div className="avances-container">
+    <div className="page-container">
 
       <h1>Avances Generales</h1>
 

@@ -3,7 +3,7 @@ import "../styles/participantes.css";
 
 export default function Participantes() {
   return (
-    <div className="participantes-container">
+    <div className="page-container">
 
       <h1>Instituciones Participantes</h1>
 

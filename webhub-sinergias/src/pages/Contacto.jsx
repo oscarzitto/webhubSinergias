@@ -10,7 +10,7 @@ export default function Contacto() {
   };
 
   return (
-    <div className="contacto-container">
+    <div className="page-container">
 
       <h1>Solicita Información</h1>
       <h3>Formulario de Contacto</h3>

@@ -3,7 +3,7 @@ import "../styles/odsdashboard.css";
 
 export default function ODSDashboardDemo() {
   return (
-    <div className="ods-container">
+    <div className="page-container">
 
       <h1>ODS Dashboard</h1>
 

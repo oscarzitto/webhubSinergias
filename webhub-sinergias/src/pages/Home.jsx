@@ -27,25 +27,33 @@ export default function Home() {
     <section className="quick-access">
 
       <Link to="/geodashboard" className="card-link">
+
         <div className="card">
+
           <h2>🌎 GeoDashboard</h2>
 
           <p>
             Visualización territorial de instituciones,
             actores y avances generales.
           </p>
+
         </div>
+
       </Link>
 
       <Link to="/ods-dashboard" className="card-link">
+
         <div className="card">
+
           <h2>📊 ODS Dashboard</h2>
 
           <p>
             Seguimiento de procesos, indicadores y
             avances asociados a los ODS.
           </p>
+
         </div>
+
       </Link>
 
     </section>

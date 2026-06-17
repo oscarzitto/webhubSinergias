@@ -4,7 +4,7 @@ import MapaInstitucionesDemo from "../components/MapaInstitucionesDemo";
 
 export default function GeoDashboardDemo() {
   return (
-    <div className="geo-container">
+    <div className="page-container">
 
       <h1>GeoDashboard</h1>
 
