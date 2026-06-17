@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 
 import Home from "../pages/Home";
@@ -16,7 +16,7 @@ import ODSDashboardDemo from "../pages/ODSDashboardDemo";
 
 export default function AppRouter() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
 
         <Route
@@ -92,6 +92,6 @@ export default function AppRouter() {
         <Route path="/geodashboard" element={<GeoDashboardDemo />} />
         <Route path="/ods-dashboard" element={<ODSDashboardDemo />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
