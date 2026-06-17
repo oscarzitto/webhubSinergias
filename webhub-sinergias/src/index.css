@@ -1,0 +1,98 @@
+/* GOOGLE FONT IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+
+  --color-primary: #1565c0;
+  --color-secondary: #2e7d32;
+  --color-accent: #f9a825;
+
+  --color-background: #f5f7f5;
+  --color-surface: #ffffff;
+
+  --color-text: #2c3e50;
+  --color-text-light: #5f6b7a;
+
+}
+
+/* BASE */
+
+body {
+  font-family: 'Inter', sans-serif;
+
+  background-color: var(--color-background);
+
+  color: var(--color-text);
+
+  line-height: 1.6;
+
+  min-height: 100vh;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* TITULOS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+/* TEXTO */
+
+p {
+  color: var(--color-text-light);
+}
+
+/* LINKS */
+
+a {
+  color: inherit;
+}
+
+/* BOTONES */
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* IMAGENES */
+
+img {
+  max-width: 100%;
+  display: block;
+}
