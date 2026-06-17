@@ -27,7 +27,8 @@ export default function Login() {
   return (
     <div className="login-container">
 
-      <h1>Acceso Privado</h1>
+      <h1>Inicio de Sesión</h1>
+      <h4>Acceso privado</h4>
 
       <form onSubmit={handleLogin}>
 
