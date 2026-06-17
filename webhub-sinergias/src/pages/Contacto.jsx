@@ -13,6 +13,7 @@ export default function Contacto() {
     <div className="contacto-container">
 
       <h1>Solicita Información</h1>
+      <h3>Formulario de Contacto</h3>
 
       <p>
         Completa el formulario para conocer más sobre las
