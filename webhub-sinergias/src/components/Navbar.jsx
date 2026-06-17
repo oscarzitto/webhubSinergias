@@ -33,7 +33,10 @@ export default function Navbar() {
           Contacto
         </Link>
 
-        <Link to="/login">
+        <Link 
+        to="/login"
+        className="login-btn"
+        >
           Login - Acceso Privado
         </Link>
 

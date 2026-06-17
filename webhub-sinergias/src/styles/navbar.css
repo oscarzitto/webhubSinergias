@@ -1,99 +1,72 @@
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding: 15px 40px;
+  padding: 14px 30px;
 
-  background: rgba(255, 255, 255, 0.95);
+  background: linear-gradient(
+    135deg,
+    #0f4c81,
+    #1b5e20
+  );
 
-  backdrop-filter: blur(8px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
 
-  border-bottom: 1px solid #e5e7eb;
-
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-}
-
-/* LOGO */
-
-.navbar-logo {
-  display: flex;
-  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-logo img {
   height: 60px;
   width: auto;
 
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease;
 }
 
 .navbar-logo img:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
-
-/* LINKS */
 
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 22px;
 }
 
 .navbar-links a {
   text-decoration: none;
 
-  color: #2c3e50;
+  color: white;
 
   font-weight: 600;
 
-  position: relative;
-
-  transition: color 0.3s ease;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
-
-/* EFECTO HOVER */
 
 .navbar-links a:hover {
-  color: #1565c0;
+  color: #ffd54f;
+
+  transform: translateY(-2px);
 }
 
-.navbar-links a::after {
-  content: "";
+.login-btn {
+  background: #f9c725;
 
-  position: absolute;
+  color: #1e293b !important;
 
-  width: 0;
-  height: 2px;
+  padding: 10px 16px;
 
-  left: 0;
-  bottom: -5px;
+  border-radius: 8px;
 
-  background: #1565c0;
-
-  transition: width 0.3s ease;
+  font-weight: 700;
 }
 
-.navbar-links a:hover::after {
-  width: 100%;
-}
+.login-btn:hover {
+  background: #ffd54f;
 
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .navbar-links {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
+  transform: translateY(-2px);
 }

@@ -85,9 +85,42 @@ a {
 
 /* BOTONES */
 
+/* BOTONES */
+
 button {
   font-family: inherit;
+
   cursor: pointer;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 12px 24px;
+
+  font-size: 0.95rem;
+
+  font-weight: 600;
+
+  background: var(--color-primary);
+
+  color: white;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 4px 12px rgba(21, 101, 192, 0.15);
+}
+
+button:hover {
+  background: #0d47a1;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(21, 101, 192, 0.25);
+}
+
+button:active {
+  transform: translateY(0);
 }
 
 /* IMAGENES */
@@ -95,4 +128,78 @@ button {
 img {
   max-width: 100%;
   display: block;
+}
+
+/* BOTONES REUTILIZABLES */
+
+.btn-primary {
+  display: inline-block;
+
+  background: var(--color-primary);
+
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #0d47a1;
+
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  display: inline-block;
+
+  background: var(--color-secondary);
+
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #1b5e20;
+
+  transform: translateY(-2px);
+}
+
+.btn-accent {
+  display: inline-block;
+
+  background: var(--color-accent);
+
+  color: #333;
+
+  padding: 12px 24px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background: #fbc02d;
+
+  transform: translateY(-2px);
 }
