@@ -86,11 +86,40 @@ export default function AppRouter() {
             </MainLayout>
           }
         />
-        
+
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<DashboardPrivado />} />
-        <Route path="/geodashboard" element={<GeoDashboardDemo />} />
-        <Route path="/ods-dashboard" element={<ODSDashboardDemo />} />
+
+
+
+        <Route
+          path="/dashboard"
+          element={
+            <MainLayout>
+              <DashboardPrivado />
+            </MainLayout>
+          }
+        />
+
+
+        <Route
+          path="/geodashboard"
+          element={
+            <MainLayout>
+              <GeoDashboardDemo />
+            </MainLayout>
+          }
+        />
+
+
+        <Route
+          path="/ods-dashboard"
+          element={
+            <MainLayout>
+              <ODSDashboardDemo />
+            </MainLayout>
+          }
+        />
+
       </Routes>
     </HashRouter>
   );

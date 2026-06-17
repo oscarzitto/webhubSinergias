@@ -1,0 +1,27 @@
+.contacto-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto-form input,
+.contacto-form select,
+.contacto-form textarea {
+  padding: 10px;
+}
+
+.contacto-form button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.success-message {
+  margin-top: 1rem;
+  color: green;
+}

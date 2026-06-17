@@ -1,0 +1,27 @@
+.geo-container {
+  padding: 2rem;
+}
+
+.geo-banner {
+  background: #f2f7f2;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.geo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.geo-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.leaflet-container {
+  margin-bottom: 2rem;
+}
