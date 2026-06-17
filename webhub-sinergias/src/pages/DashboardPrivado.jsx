@@ -45,6 +45,13 @@ export default function DashboardPrivado() {
           ))}
         </ul>
 
+        <h3>Alertas</h3>
+
+        <ul>
+          <li>⚠️ Informe ODS pendiente de carga.</li>
+          <li>📅 Próxima revisión: 15 de julio de 2026.</li>
+        </ul>
+
       </div>
 
       <div className="dashboard-links">

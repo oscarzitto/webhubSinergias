@@ -19,7 +19,7 @@ export default function Recursos() {
             <p>{recurso.descripcion}</p>
 
             <button>
-              Descargar
+              Ver Recurso
             </button>
 
           </div>
